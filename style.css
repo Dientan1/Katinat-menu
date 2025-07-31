@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #f0f0f0; 
+    background-color: #2a3d4f; 
+}
+
+* Header Styles */
+.main-header {
+    background-color: #114358; 
+    background-position: center;
+    width: 100%;
+    padding: 20px 0; /* Adjust padding as needed to match height */
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow like in the image */
+}
+
+.header-content {
+    max-width: 1200px; /* Or whatever width fits your design */
+    margin: 0 auto;
+    display: flex;
+    /* THIS IS KEY: Puts logo on left, menu on right */
+    justify-content: space-between;
+    align-items: center; /* Vertically aligns logo and menu */
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 80px; /* Adjust height to match the size in the image */
+    width: auto;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 30px; /* Space between menu items */
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0; /* White/light grey text for normal items */
+    font-weight: bold; /* Menu items look bold in the image */
+    padding: 10px 15px; /* Padding for click area and background */
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* You might want to adjust font-size if needed */
+    font-size: 1.05em; /* Example: slightly larger text */
+}
+
+.main-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+/* THIS IS ALSO KEY: For the highlighted "MENU" item */
+.main-nav ul li a.active {
+    background-color: #d4a775; /* The orange/brown highlight from the image */
+    color: #2a3d4f; /* Dark text for the highlighted menu item (from your body color) */
+    /* If the text inside the active state looks a different shade, you might adjust this color */
+}
+
+/* Content Placeholder for White Space */
+.content-placeholder {
+    height: 800px; 
+    background-color: #ffffff; 
+    width: 100%;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #114358;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0 20px;
+    color: #f0f0f0;
+    font-size: 0.9em;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    min-width: 280px; 
+}
+
+.footer-logo img {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.about-us h3,
+.footer-center h3,
+.footer-right h3 {
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.about-us p,
+.footer-center p {
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.footer-center ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-center ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-center ul li a:hover {
+    color: #d4a775;
+}
+
+.app-mockup {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.8em;
+}
